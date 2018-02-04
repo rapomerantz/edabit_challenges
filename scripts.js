@@ -1,8 +1,87 @@
 console.log( 'JS LINKED' );
 
 
+//Return the four-letter strings from an array
+let countLettersArr = ["Ryan", "Kieran", "Jason", "Matt"];
+function isFourLetters (countLettersArr) {
+  let result = countLettersArr.filter(word => word.length === 4);
+  return result;
+
+}
+console.log(isFourLetters(countLettersArr));
+
+countLettersArr = ["Tomato", "Potato", "Pair"];
+function isFourLetters (countLettersArr) {
+  let result = countLettersArr.filter(word => word.length === 4);
+  return result;
+
+}
+console.log(isFourLetters(countLettersArr));
+//END Return the four-letter strings from an array
 
 
+
+//String ending matches second string
+let strOne = "convention";
+let strTwo = "tio";
+console.log(strOne);
+console.log(strTwo);
+
+function endingMatch(strOne, strTwo) {
+    if (strOne.endsWith(strTwo)) {
+      return true;
+    } else {
+      return false;
+    }
+}
+console.log(endingMatch(strOne, strTwo));
+
+strOne = "extraterrestrial";
+strTwo = "xtraterrestrial";
+console.log(strOne);
+console.log(strTwo);
+
+function endingMatch(strOne, strTwo) {
+    if (strOne.endsWith(strTwo)) {
+      return true;
+    } else {
+      return false;
+    }
+}
+console.log(endingMatch(strOne, strTwo));
+//END string ending matches string two
+
+
+// Milk & Cookies: Return true if date is Dec 24
+let milkCookesDate = new Date( 2013, 11, 24 );
+console.log("month (11=dec): " + milkCookesDate.getMonth());
+console.log("day: " + milkCookesDate.getDate());
+
+function christmasEve(milkCookesDate) {
+  if (milkCookesDate.getDate() === 24 && milkCookesDate.getMonth() === 11) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(christmasEve(milkCookesDate));
+//END Milk & Cookies
+
+
+
+
+
+
+//Alphabet Soup: Sort and return a single-word string alphabetically
+let alphabetSoup = "superduper";
+console.log("Alphabet Soup var: " + alphabetSoup);
+
+function reorderLetters(alphabetSoup) {
+  return alphabetSoup.split('').sort().join('');
+}
+
+console.log("Redorder letters alphabetically: " + reorderLetters(alphabetSoup));
+//end Alphabet Soup: Sort and return a single-word string alphabetically
 
 
 //a shorter way to shuffle the name
@@ -30,10 +109,6 @@ function nameShuffle (donaldTrump) {
 
 console.log (nameShuffle(donaldTrump));
 //end OG solution to Shuffle the name
-
-
-
-
 
 
 //Is a number even or odd?
