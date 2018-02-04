@@ -5,6 +5,32 @@ console.log( 'JS LINKED' );
 
 
 
+//a shorter way to shuffle the name
+let nancyPelosi = "Nancy Pelosi";
+console.log(nancyPelosi);
+
+function shuffleName (nancyPelosi) {
+  return nancyPelosi.split (' ').reverse().join (' ');
+}
+
+console.log(shuffleName(nancyPelosi));
+//end shorter way to shuffle the name
+
+
+//Original solution to Shuffle the name
+let donaldTrump = "Donald Trump";
+console.log(donaldTrump + " reversed would be:");
+
+function nameShuffle (donaldTrump) {
+  let split = (donaldTrump.split (' '));
+  let reverse = split.reverse();
+  reverse = reverse.join(' ');
+  return reverse;
+}
+
+console.log (nameShuffle(donaldTrump));
+//end OG solution to Shuffle the name
+
 
 
 
