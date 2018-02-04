@@ -1,6 +1,31 @@
 console.log( 'JS LINKED' );
 
 
+
+
+
+
+
+//WRONG WAY TO Find Largest Number In Array
+//.sort doesn't work with some number sequences
+let findLargestArr = [4, 5, 1, 3];
+console.log(findLargestArr);
+
+function findLargestNum(findLargestArr) {
+  findLargestArr.sort ();
+  findLargestArr.reverse();
+  return findLargestArr[0];
+}
+
+console.log(findLargestNum(findLargestArr));
+//END WRONG WAY
+
+
+
+
+
+
+
 //Return the four-letter strings from an array
 let countLettersArr = ["Ryan", "Kieran", "Jason", "Matt"];
 function isFourLetters (countLettersArr) {
